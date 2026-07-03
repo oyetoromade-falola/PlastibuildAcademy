@@ -1,1 +1,67 @@
+:root {
 
+  /* =====================
+     PRIMARY BRAND COLORS
+  ====================== */
+  --primary-blue: #0A66C2;
+  --eco-green: #00A86B;
+  --white: #FFFFFF;
+
+  /* Backgrounds */
+  --bg-light: #F5F7FA;
+  --bg-white: #FFFFFF;
+
+  /* Text Colors */
+  --text-dark: #2D3748;
+  --text-gray: #718096;
+  --text-light: #A0AEC0;
+
+  /* Borders */
+  --border-light: #E2E8F0;
+
+  /* =====================
+     TYPOGRAPHY
+  ====================== */
+  --font-family: 'Poppins', sans-serif;
+
+  --h1: 48px;
+  --h2: 36px;
+  --h3: 28px;
+  --h4: 22px;
+
+  --body: 16px;
+  --small: 14px;
+
+  /* =====================
+     SPACING SYSTEM
+  ====================== */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* =====================
+     BORDER RADIUS
+  ====================== */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 30px;
+
+  /* =====================
+     SHADOWS
+  ====================== */
+  --shadow-sm: 0 2px 6px rgba(0,0,0,0.05);
+  --shadow-md: 0 6px 16px rgba(0,0,0,0.08);
+  --shadow-lg: 0 12px 28px rgba(0,0,0,0.12);
+
+  /* =====================
+     TRANSITIONS
+  ====================== */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  }

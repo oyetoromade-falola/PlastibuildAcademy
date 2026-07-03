@@ -1,0 +1,50 @@
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section {
+  padding: var(--space-8) 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Buttons Base */
+.btn {
+  padding: 12px 20px;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-normal);
+  font-weight: 500;
+}
+
+.btn-primary {
+  background: var(--primary-blue);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  background: var(--white);
+  border: 1px solid var(--primary-blue);
+  color: var(--primary-blue);
+}
+
+.btn-green {
+  background: var(--eco-green);
+  color: var(--white);
+}
+
+.card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-5);
+  }

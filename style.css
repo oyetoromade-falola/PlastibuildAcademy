@@ -396,3 +396,71 @@ grid-template-columns:1fr;
 }
 
   }
+
+/* LEARNING PATHWAY */
+
+.pathway-section{
+    padding:80px 8%;
+    background:#ffffff;
+    text-align:center;
+}
+
+.pathway-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    margin-top:40px;
+}
+
+.pathway-card{
+    background:#F5F7FA;
+    padding:30px 20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.06);
+    transition:.3s;
+}
+
+.pathway-card:hover{
+    transform:translateY(-8px);
+}
+
+.pathway-number{
+    width:60px;
+    height:60px;
+    margin:0 auto 20px;
+    background:#0A66C2;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.pathway-card h3{
+    margin-bottom:15px;
+    color:#2D3748;
+}
+
+.pathway-card p{
+    color:#718096;
+    line-height:1.6;
+}
+
+@media(max-width:1024px){
+
+.pathway-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:600px){
+
+.pathway-grid{
+grid-template-columns:1fr;
+}
+
+}
+

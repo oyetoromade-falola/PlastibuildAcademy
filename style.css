@@ -413,3 +413,7 @@ RESPONSIVE
     font-size: 32px;
   }
 }
+
+.image-card img{
+    display:block;
+}

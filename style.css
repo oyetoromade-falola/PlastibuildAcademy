@@ -523,6 +523,78 @@ font-weight:500;
    }
 
 
+/* =========================
+   PROGRAMS 2.0 (UPGRADED)
+========================= */
+
+.program-card{
+padding:0;
+overflow:hidden;
+border-radius:16px;
+}
+
+.program-image{
+position:relative;
+height:180px;
+}
+
+.program-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.program-content{
+padding:20px;
+text-align:left;
+}
+
+.program-meta{
+display:flex;
+justify-content:space-between;
+margin:10px 0 15px;
+font-size:13px;
+color:#5B6573;
+}
+
+/* BADGES */
+
+.badge{
+position:absolute;
+top:10px;
+left:10px;
+padding:6px 10px;
+border-radius:20px;
+font-size:11px;
+font-weight:600;
+color:#fff;
+}
+
+.badge.beginner{
+background:#00A86B;
+}
+
+.badge.intermediate{
+background:#0A66C2;
+}
+
+/* BUTTON IMPROVE */
+
+.program-card button{
+margin-top:10px;
+}
+
+/* HOVER EFFECT ENHANCED */
+
+.program-card:hover{
+transform:translateY(-10px);
+box-shadow:0 12px 25px rgba(0,0,0,0.12);
+}
+
+
+
+
+
 
 
 

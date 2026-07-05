@@ -42,4 +42,41 @@ counters.forEach(counter => {
     updateCounter();
 });
 
-        
+     // =========================
+// PROGRAM FILTER SYSTEM
+// =========================
+
+const filterButtons = document.querySelectorAll(".program-filters button");
+const programCards = document.querySelectorAll(".program-card");
+
+filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+
+        // remove active from all
+        filterButtons.forEach(btn => btn.classList.remove("active"));
+        button.classList.add("active");
+
+        const filter = button.textContent.toLowerCase();
+
+        programCards.forEach(card => {
+
+            const title = card.querySelector("h3").textContent.toLowerCase();
+            const badge = card.querySelector(".badge").textContent.toLowerCase();
+
+            if (filter === "all") {
+                card.style.display = "block";
+            }
+            else if (
+                title.includes(filter) ||
+                badge.includes(filter)
+            ) {
+                card.style.display = "block";
+            }
+            else {
+                card.style.display = "none";
+            }
+        });
+    });
+});
+
+

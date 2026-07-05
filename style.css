@@ -1,5 +1,5 @@
 /* =========================
-BASE RESET
+RESET
 ========================= */
 
 * {
@@ -16,58 +16,6 @@ body {
 }
 
 /* =========================
-UTILITIES
-========================= */
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 8%;
-}
-
-.section {
-  padding: 80px 0;
-}
-
-.text-center {
-  text-align: center;
-}
-
-/* =========================
-BUTTONS
-========================= */
-
-.btn {
-  padding: 12px 22px;
-  border-radius: 12px;
-  font-weight: 600;
-  cursor: pointer;
-  border: none;
-  transition: 0.3s;
-}
-
-.btn-primary {
-  background: #00A86B;
-  color: #fff;
-}
-
-.btn-primary:hover {
-  background: #008A59;
-}
-
-.btn-outline {
-  background: #fff;
-  color: #00A86B;
-  border: 2px solid #00A86B;
-}
-
-.btn-outline:hover {
-  background: #00A86B;
-  color: #fff;
-}
-
-/* =========================
 NAVBAR
 ========================= */
 
@@ -81,11 +29,6 @@ NAVBAR
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-}
-
-.navbar.scrolled {
-  background: rgba(255,255,255,0.85);
-  backdrop-filter: blur(10px);
 }
 
 .logo {
@@ -113,11 +56,13 @@ NAVBAR
   color: #00A86B;
 }
 
-.menu-toggle {
-  display: none;
-  font-size: 26px;
-  background: none;
+.start-btn {
+  background: #00A86B;
+  color: #fff;
+  padding: 10px 18px;
   border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 /* =========================
@@ -133,6 +78,7 @@ HERO
   display: flex;
   gap: 60px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .hero-text {
@@ -151,16 +97,55 @@ HERO
   margin-bottom: 20px;
 }
 
-.hero-badges {
+.hero-buttons {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+}
+
+/* BUTTONS */
+
+.btn-primary,
+.btn-secondary {
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #00A86B;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #008A59;
+}
+
+.btn-secondary {
+  background: #fff;
+  border: 2px solid #00A86B;
+  color: #00A86B;
+}
+
+.btn-secondary:hover {
+  background: #00A86B;
+  color: #fff;
+}
+
+/* BADGES */
+
+.hero-badges {
+  display: flex;
+  gap: 15px;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .hero-badge {
   background: #fff;
-  padding: 12px 18px;
+  padding: 12px 16px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
@@ -169,43 +154,59 @@ HERO
   color: #00A86B;
 }
 
-/* HERO IMAGE */
+/* HERO IMAGE FIX (IMPORTANT) */
+
 .hero-image {
   flex: 1;
+  max-width: 500px;
 }
 
 .image-card {
   position: relative;
+  width: 100%;
   border-radius: 20px;
   overflow: hidden;
 }
 
 .image-card img {
   width: 100%;
+  height: 400px;
+  object-fit: cover;
   display: block;
   border-radius: 20px;
 }
 
+/* FLOATING CARDS */
+
+.floating-card {
+  position: absolute;
+  background: #fff;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
 /* =========================
-IMPACT SECTION
+IMPACT
 ========================= */
 
 .impact-section {
   padding: 80px 8%;
-  background: linear-gradient(135deg,#fff,#E8F7F0);
   text-align: center;
+  background: linear-gradient(135deg,#fff,#E8F7F0);
 }
 
 .impact-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4,1fr);
   gap: 20px;
 }
 
 .impact-card {
   background: #fff;
   padding: 30px;
-  border-radius: 16px;
+  border-radius: 14px;
   transition: 0.3s;
 }
 
@@ -224,7 +225,7 @@ PROGRAMS
 
 .programs-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4,1fr);
   gap: 20px;
 }
 
@@ -232,14 +233,12 @@ PROGRAMS
   background: #fff;
   border-radius: 16px;
   overflow: hidden;
-  position: relative;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   transition: 0.3s;
 }
 
 .program-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
 }
 
 .program-image {
@@ -253,7 +252,8 @@ PROGRAMS
   object-fit: cover;
 }
 
-/* FIXED BADGES */
+/* PROGRAM BADGES FIX */
+
 .program-badge {
   position: absolute;
   top: 10px;
@@ -265,8 +265,13 @@ PROGRAMS
   color: #fff;
 }
 
-.beginner { background: #00A86B; }
-.intermediate { background: #0A66C2; }
+.beginner {
+  background: #00A86B;
+}
+
+.intermediate {
+  background: #0A66C2;
+}
 
 .program-content {
   padding: 20px;
@@ -286,8 +291,8 @@ PATHWAY
 .pathway-flow {
   display: flex;
   gap: 20px;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .path-step {
@@ -295,7 +300,7 @@ PATHWAY
   min-width: 220px;
   background: #F5F7FA;
   padding: 25px;
-  border-radius: 16px;
+  border-radius: 14px;
   transition: 0.3s;
 }
 
@@ -304,7 +309,7 @@ PATHWAY
 }
 
 /* =========================
-RESPONSIVE
+RESPONSIVE FIX (IMPORTANT)
 ========================= */
 
 @media (max-width: 1024px) {
@@ -316,7 +321,7 @@ RESPONSIVE
 
   .impact-grid,
   .programs-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2,1fr);
   }
 
   .hero h1 {
@@ -339,10 +344,6 @@ RESPONSIVE
 
   .nav-links.show {
     display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
   }
 
   .impact-grid,

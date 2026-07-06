@@ -602,6 +602,62 @@ RESPONSIVE STATS
 }
 
 
+/* ===========================
+TESTIMONIALS SECTION
+=========================== */
+
+.testimonials{
+    padding:90px 0;
+    background:#F8FAFC;
+}
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:25px;
+    margin-top:40px;
+}
+
+.testimonial-card{
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    border:1px solid #E2E8F0;
+    transition:.3s;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-5px);
+    border-color:#16A34A;
+    box-shadow:0 10px 15px rgba(0,0,0,0.06);
+}
+
+.testimonial-card p{
+    color:#64748B;
+    line-height:1.6;
+    margin-bottom:15px;
+    font-style:italic;
+}
+
+.testimonial-card h4{
+    color:#1E293B;
+    font-weight:600;
+}
+
+/* ===========================
+RESPONSIVE TESTIMONIALS
+=========================== */
+
+@media(max-width:900px){
+.testimonial-grid{
+    grid-template-columns:1fr;
+}
+    }
+
+
+
+
+
 
 
 

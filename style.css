@@ -202,3 +202,106 @@ RESPONSIVE
 
 }
 
+
+
+
+/* ===========================
+HERO SECTION
+=========================== */
+
+.hero{
+    padding:80px 0;
+    background:linear-gradient(135deg, #F8FAFC, #ECFDF5);
+}
+
+.hero-content{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:3rem;
+    line-height:1.2;
+    color:#1E293B;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:1.1rem;
+    color:#64748B;
+    margin-bottom:30px;
+    max-width:500px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:15px;
+}
+
+/* Primary button already exists as .btn */
+
+/* Secondary button */
+.btn-outline{
+    display:inline-block;
+    padding:12px 24px;
+    border-radius:8px;
+    border:2px solid #16A34A;
+    color:#16A34A;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-outline:hover{
+    background:#16A34A;
+    color:#fff;
+}
+
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.image-box{
+    width:100%;
+    max-width:420px;
+    height:320px;
+    background:#E2E8F0;
+    border-radius:16px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#64748B;
+    font-weight:500;
+}
+
+/* ===========================
+RESPONSIVE HERO
+=========================== */
+
+@media(max-width:900px){
+
+.hero-content{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text p{
+    margin:auto;
+}
+
+.hero-buttons{
+    justify-content:center;
+}
+
+    }
+
+
+
+

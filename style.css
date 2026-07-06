@@ -1,6 +1,12 @@
-/* =========================
-   RESET + BASE
-========================= */
+/* =====================
+GOOGLE FONT
+===================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* =====================
+RESET
+===================== */
 
 *{
 margin:0;
@@ -8,302 +14,65 @@ padding:0;
 box-sizing:border-box;
 }
 
-body{
-font-family:'Poppins', sans-serif;
-background:#F5F7FA;
-color:#2D3748;
-line-height:1.6;
+html{
+scroll-behavior:smooth;
 }
 
-/* =========================
-   GLOBAL CONTAINER SYSTEM
-========================= */
+body{
+font-family:'Poppins',sans-serif;
+background:#F8FAFC;
+color:#1E293B;
+line-height:1.7;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+ul{
+list-style:none;
+}
 
 .container{
-width:100%;
+width:90%;
 max-width:1200px;
 margin:auto;
-padding:0 20px;
 }
 
-/* =========================
-   NAVBAR
-========================= */
-
-.navbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 8%;
-background:#fff;
-position:sticky;
-top:0;
-z-index:1000;
-box-shadow:0 2px 10px rgba(0,0,0,0.06);
+section{
+padding:90px 0;
 }
 
-.logo{
-display:flex;
-align-items:center;
-gap:10px;
-font-size:22px;
-font-weight:700;
-color:#00A86B;
-}
-
-.logo-icon{
-font-size:26px;
-}
-
-.nav-links{
-display:flex;
-gap:24px;
-}
-
-.nav-links a{
-text-decoration:none;
-color:#2D3748;
-font-weight:500;
-transition:0.3s;
-}
-
-.nav-links a:hover,
-.nav-links a.active{
-color:#00A86B;
-font-weight:600;
-}
-
-.start-btn{
-background:#00A86B;
-color:#fff;
-padding:10px 18px;
-border:none;
-border-radius:10px;
-font-weight:600;
-cursor:pointer;
-transition:0.3s;
-}
-
-.start-btn:hover{
-background:#008A59;
-}
-
-/* =========================
-   HERO (HOME)
-========================= */
-
-.hero{
-padding:100px 8%;
-background:linear-gradient(135deg,#E8F7F0,#FFFFFF);
-}
-
-/* =========================
-   PROGRAMS PAGE HERO
-========================= */
-
-.programs-hero{
-padding:80px 8%;
-text-align:center;
-background:linear-gradient(135deg,#E8F7F0,#fff);
-}
-
-.programs-hero h1{
-font-size:42px;
-margin-bottom:10px;
-}
-
-.search-bar{
-margin-top:20px;
-padding:12px 18px;
-width:60%;
-max-width:500px;
-border-radius:10px;
-border:1px solid #ddd;
-outline:none;
-}
-
-.results-info{
-margin-top:10px;
-font-size:14px;
-color:#5B6573;
-}
-
-/* =========================
-   FILTERS
-========================= */
-
-.program-filters{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:10px;
-padding:20px;
-background:#fff;
-}
-
-.program-filters button{
-padding:10px 15px;
-border:none;
-background:#F5F7FA;
+.btn{
+display:inline-block;
+padding:14px 28px;
 border-radius:8px;
-cursor:pointer;
-border:1px solid #ddd;
-transition:0.3s;
-font-weight:500;
-}
-
-.program-filters button:hover{
-background:#00A86B;
+background:#16A34A;
 color:#fff;
-border-color:#00A86B;
+font-weight:600;
+transition:.3s;
 }
 
-.program-filters .active{
-background:#00A86B;
-color:#fff;
-border-color:#00A86B;
-}
-
-/* =========================
-   PROGRAMS SECTION
-========================= */
-
-.programs-section{
-padding:80px 8%;
-text-align:center;
-background:#F5F7FA;
+.btn:hover{
+background:#15803D;
+transform:translateY(-2px);
 }
 
 .section-title{
-font-size:32px;
-color:#00A86B;
-margin-bottom:10px;
+font-size:40px;
+font-weight:700;
+text-align:center;
+margin-bottom:15px;
 }
 
 .section-subtitle{
-color:#5B6573;
-margin-bottom:40px;
-}
-
-/* GRID */
-
-.programs-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
-}
-
-/* CARD */
-
-.program-card{
-background:#fff;
-border-radius:16px;
-overflow:hidden;
-box-shadow:0 4px 12px rgba(0,0,0,0.05);
-transition:0.3s;
-}
-
-.program-card:hover{
-transform:translateY(-10px);
-box-shadow:0 12px 25px rgba(0,0,0,0.12);
-}
-
-.program-image{
-position:relative;
-height:180px;
-}
-
-.program-image img{
-width:100%;
-height:100%;
-object-fit:cover;
-}
-
-/* BADGES */
-
-.badge{
-position:absolute;
-top:10px;
-left:10px;
-padding:6px 10px;
-border-radius:20px;
-font-size:11px;
-font-weight:600;
-color:#fff;
-}
-
-.badge.beginner{ background:#00A86B; }
-.badge.intermediate{ background:#0A66C2; }
-
-/* CONTENT */
-
-.program-content{
-padding:20px;
-text-align:left;
-}
-
-.program-content h3{
-margin-bottom:10px;
-}
-
-.program-content p{
-font-size:14px;
-color:#5B6573;
-margin-bottom:15px;
-}
-
-.program-meta{
-display:flex;
-justify-content:space-between;
-font-size:13px;
-color:#5B6573;
-margin-bottom:15px;
-}
-
-.program-card button{
-width:100%;
-padding:10px;
-background:#00A86B;
-color:#fff;
-border:none;
-border-radius:10px;
-cursor:pointer;
-}
-
-.program-card button:hover{
-background:#008A59;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media(max-width:1024px){
-
-.programs-grid{
-grid-template-columns:repeat(2,1fr);
-}
-
-.hero h1{
-font-size:42px;
-}
-}
-
-@media(max-width:600px){
-
-.nav-links{
-display:none;
-}
-
-.programs-grid{
-grid-template-columns:1fr;
-}
-
-.search-bar{
-width:100%;
-}
-
-.hero h1{
-font-size:34px;
-}
+text-align:center;
+color:#64748B;
+margin-bottom:60px;
 }

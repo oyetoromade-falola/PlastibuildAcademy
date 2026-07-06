@@ -542,5 +542,67 @@ RESPONSIVE JOURNEY
         }
 
 
-mm
 
+/* ===========================
+STATS SECTION
+=========================== */
+
+.stats{
+    padding:90px 0;
+    background:#FFFFFF;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:25px;
+    margin-top:40px;
+}
+
+.stat-card{
+    background:#F8FAFC;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    border:1px solid #E2E8F0;
+    transition:.3s;
+}
+
+.stat-card:hover{
+    transform:translateY(-5px);
+    border-color:#16A34A;
+    box-shadow:0 10px 15px rgba(0,0,0,0.06);
+}
+
+.stat-card h3{
+    font-size:2rem;
+    color:#16A34A;
+    margin-bottom:10px;
+}
+
+.stat-card p{
+    color:#64748B;
+    font-weight:500;
+}
+
+/* ===========================
+RESPONSIVE STATS
+=========================== */
+
+@media(max-width:900px){
+.stats-grid{
+    grid-template-columns:repeat(2, 1fr);
+}
+}
+
+@media(max-width:500px){
+.stats-grid{
+    grid-template-columns:1fr;
+}
+}
+
+
+
+
+
+                                

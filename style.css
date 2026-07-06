@@ -302,6 +302,62 @@ RESPONSIVE HERO
 
     }
 
+/* ===========================
+MISSION SECTION
+=========================== */
 
+.mission{
+    padding:90px 0;
+    background:#FFFFFF;
+}
+
+.mission-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:25px;
+    margin-top:40px;
+}
+
+.mission-card{
+    background:#F8FAFC;
+    padding:30px;
+    border-radius:12px;
+    border:1px solid #E2E8F0;
+    transition:.3s;
+}
+
+.mission-card:hover{
+    transform:translateY(-5px);
+    border-color:#16A34A;
+    box-shadow:0 10px 20px rgba(0,0,0,0.05);
+}
+
+.mission-card h3{
+    color:#16A34A;
+    font-size:1.4rem;
+    margin-bottom:10px;
+}
+
+.mission-card p{
+    color:#64748B;
+    line-height:1.6;
+}
+
+/* ===========================
+RESPONSIVE MISSION
+=========================== */
+
+@media(max-width:900px){
+
+.mission-grid{
+    grid-template-columns:1fr;
+}
+
+}
+
+
+
+
+    
 
 
